@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="headerpequeño">
+            <i class="fa-solid fa-envelope"></i>zapatos00000@gmail.com
+            <i class="fa-solid fa-phone-flip"></i>9803758700
+            <i class="fa-brands fa-facebook-f icono"></i>
+            <i class="fa-brands fa-instagram icono"></i>
+            <i class="fa-brands fa-twitch icono"></i>
+            <i class="fa-brands fa-whatsapp icono"></i>
+        </div>
+        <div>
+        </div>
+        <div>
+            <div>
+                <nav>
+                    <div>
+                        <i class="fa-solid fa-shoe-prints"></i>
+                    </div>
+                    <ul>
+                        <li><a href="index.html">INICIO</a></li>
+                        <li><a href="nosotros.html">NOSOTROS</a></li>
+                        <li><a href="contacto.html">CONTACTENOS</a></li>
+                        <li><a href="servicios.html">SERVICIOS</a></li>
+                    </ul>
+                    <div>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <h1 class="frase">
+        ¡¡PIDE NUESTROS PEDIDOS YA MISMO!!!
+    </h1>
+    <!-- metodo post(se envia de manera oculta) y get(si se ven) -->
+    <form action="#" method="post">
+        <h1>registro de clientes</h1>
+        <fieldset class="usuario">
+            <legend>Cliente :</legend>
+            <input type="text" id="nombre" placeholder="NOMBRE Y APPELLIDO" required name="nombre" minlength="3"
+                maxlength="7" autocomplete="on">
+            <br>
+            <br>
+            <input type="email" id="correo" name="correo" placeholder="CORREO ELETRONICO" required minlength="3"
+                maxlength="40" autocomplete="on">
+            <br>
+            <br>
+            <input type="text" id="dirrecion" name="dirrecion" placeholder="DIRRECION" required minlength="3"
+                maxlength="40" autocomplete="on">
+            <br>
+            <br>
+            <input type="number" id="telefono" name="telefonon" placeholder="TELEFONO" required minlength="3"
+                maxlength="40" title="telefono incorrecta">
+            <br>
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>pedido :</legend>
+            <select name="regimen" id="regimen">
+                <option value="envio">selecciona una opcion:</option>
+                <option value="envio">Contra entrega</option>
+                <option value="envio">Local fisico</option>
+            </select>
+            <br>
+            <select name="regimen" id="regimen">
+                <option value="envio">selecciona una opcion:</option>
+                <option value="envio">Nequi</option>
+                <option value="envio">Efectivo</option>
+                <option value="envio">Datafono</option>
+                <option value="envio">Bancolombia</option>
+
+            </select>
+            <fieldset>
+                <legend>Comida</legend>
+                <select id="comida" name="comida">
+                    <option value="sushi">Zapato mujer</option>
+                    <option value="onigiri">Zapato niño</option>
+                    <option value="sashimi">Zapato hombre</option>
+                    <option value="miso">Bota niño</option>
+                    <option value="udon">Bota dama</option>
+                    <option value="soba1">Bota caballero</option>
+                    <option value="soba2">Tenis hombre</option>
+                    <option value="ramen">Tenis mujer</option>
+                    <option value="bento">Tenis niño</option>
+                    <option value="takoyaki">Chanclas</option>
+                </select>
+            </fieldset>
+        </fieldset>
+        <div class="boton">
+            <button type="submit">ENVIAR</button>
+            <br>
+            <br>
+            <button type="reset">RESET</button>
+        </div>
+    </form>
+
+    <!-- <section class="featured">
+        <img class="sushiArticle" src="sushi-es-delicioso-naturaleza-muerta.png" alt="">
+        <article class="ft-articulo">
+            <h1>Sushi Japonés ("Recetas Del Mundo")</h1>
+            <hr>
+            <p>En todo el mundo, existen innumerables platillos que cruzan fronteras y son adoptados por diversas
+                culturas. A menudo, estos platillos se fusionan con ingredientes y técnicas locales, dando como
+                resultado sabores increíbles. Uno de estos platillos populares es el sushi. <b>Ven</b> y prueba nuestras
+                artes culinarias desde japon y otros paises orientales.
+            </p>
+            <div class="boton-container">
+                <a href="https://www.hyatt.com/grand-hyatt/es-ES/boggh-grand-hyatt-bogota/dining?src=agn_oth_es_sem_marca_ushin_um_bing_bps_p_x_x&utm_term=sushi&utm_campaign=HYATT_BRAND_AON&utm_source=bing&utm_medium=ppc&hsa_acc=6313265745&hsa_cam=22733158312&hsa_grp=1317217517092772&hsa_ad=&hsa_src=o&hsa_tgt=kwd-82327512237618:loc-43&hsa_kw=sushi&hsa_mt=p&hsa_net=adwords&hsa_ver=3&msclkid=b6db601b85f21c11355008a110ecfe64">
+                    <div class="boton">Mas info.....</div>
+                </a>
+            </div>
+        </article>
+    </section>
+    <section id="slider">
+        <article id="imagenUno"> -->
+    <!-- <img src="spaghetti-2931846_1920.jpg" alt=""> -->
+    <!-- <div>
+                <h1>asdf</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, temporibus. Eligendi quas optio suscipit corrupti quia magnam deleniti consequatur, neque cumque veniam aliquid deserunt delectus eius beatae. Perspiciatis, repellendus ad!</p>
+            </div>
+        </article> -->
+    <!-- <article id="imagenDos">
+            <img src="" alt="">
+            <div>
+                <p></p>
+            </div>
+        </article>
+        <article id="imagenTres">
+            <img src="" alt="">
+            <div>
+                <p></p>
+            </div>
+        </article>
+        <article id="imagenCuatro">
+            <img src="" alt="">
+            <div>
+                <p></p>
+            </div>
+        </article>
+        <article id="imagenCinco">
+            <img src="" alt="">
+            <div>
+                <p></p>
+            </div>
+        </article>
+        <article id="imagenSeis">
+            <img src="" alt="">
+            <div>
+                <p></p>
+            </div>
+        </article> -->
+    <!-- </section>
+    <section class="servicios">
+        <article id="china">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore ad similique voluptatem minus, dolores laudantium nihil quaerat a culpa distinctio voluptas sit, totam dolorum ea libero. Blanditiis praesentium ullam aliquid?</p>
+        </article>
+        <article>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur reiciendis repellendus, nobis sint aliquam tempora, tenetur aut optio maxime praesentium hic dolore nemo deserunt odit, error aperiam. Consectetur, nisi quos!</p>
+        </article>
+        <article>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto corporis reiciendis nulla atque assumenda obcaecati natus labore iure distinctio consectetur, asperiores tenetur laborum. Tempore sit, dignissimos assumenda earum asperiores possimus.</p>
+        </article>
+        <article>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis nostrum reiciendis officiis itaque repellat aperiam facilis illum ipsum est nisi architecto molestiae unde corrupti sunt, quos minima reprehenderit nemo voluptatum.</p>
+        </article>
+        <article>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis nostrum reiciendis officiis itaque repellat aperiam facilis illum ipsum est nisi architecto molestiae unde corrupti sunt, quos minima reprehenderit nemo voluptatum.</p>
+        </article>
+        <article>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis nostrum reiciendis officiis itaque repellat aperiam facilis illum ipsum est nisi architecto molestiae unde corrupti sunt, quos minima reprehenderit nemo voluptatum.</p>
+        </article>
+        <article>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis nostrum reiciendis officiis itaque repellat aperiam facilis illum ipsum est nisi architecto molestiae unde corrupti sunt, quos minima reprehenderit nemo voluptatum.</p>
+        </article>
+    </section> -->
+
+    <!-- <section>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/IGCIX3kLzLw?si=nB0mY258bJoCLu5Q"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <article>
+            <figure class="art-image">
+                <img src="https://i.blogs.es/1c7277/curry-indio/500_333.jpeg" alt="imagen2">
+            </figure>
+            <div class="art-cont">
+                <h2>Curry Indio</h2>
+                <p>Viajando al sur de Asia, llegamos a la India, cuya cocina es conocida por su increíble variedad de
+                    sabores y especias. El curry es un plato icónico, y no hay un solo tipo de curry, sino una amplia
+                    gama de ellos. Los ingredientes clave incluyen carne (como pollo, cordero o pescado), verduras y una
+                    mezcla de especias que puede incluir cúrcuma, comino, jengibre, cilantro y mucho más. El curry se
+                    sirve generalmente con arroz o pan naan, y su picante y sabroso sabor lo ha convertido en uno de los
+                    favoritos de todo el mundo.</p>
+            </div>
+        </article>
+        <article>
+            <figure class="art-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5ui6_pS1m3-KkGPM81B_UzTnzHZNGOGWyyg&s"
+                    alt="imagen3">
+            </figure>
+            <div class="art-cont">
+                <h2>Baguette Francés</h2>
+                <p>Nos dirigimos a Francia, donde la baguette es una institución nacional y una de las comidas
+                    internacionales famosas del mundo. Este pan crujiente y alargado es famoso por su corteza dorada y
+                    su miga suave. Los franceses lo utilizan como base para una amplia variedad de bocadillos, desde el
+                    clásico jamón y queso hasta opciones más sofisticadas como el «jambon-beurre» (jamón con
+                    mantequilla). La baguette es un elemento esencial en la cultura culinaria francesa y es una delicia
+                    que se encuentra en todo el mundo.</p>
+            </div>
+        </article>
+        <article>
+            <figure class="art-image">
+                <img src="https://cdn-ilddihb.nitrocdn.com/MgqZCGPEMHvMRLsisMUCAIMWvgGMxqaj/assets/images/optimized/rev-cf73a32/www.goya.com/wp-content/uploads/2025/05/Brazilian-Style-Picanha-Steak.jpg"
+                    alt="imagen3">
+            </figure>
+            <div class="art-cont">
+                <h2>Churrasco Brasileño</h2>
+                <p>Brasil es conocido por su amor por la carne, y el churrasco es una de las comidas más famosas. En un
+                    churrasco, los cortes de carne se asan a la parrilla lentamente y se sirven en rodajas. Los
+                    comensales pueden elegir entre una variedad de carnes, como picanha (culotte), costillas y
+                    salchichas. Los restaurantes de churrasco, conocidos como «churrascarias», son populares en todo el
+                    mundo y ofrecen una experiencia de comida única.</p>
+            </div>
+        </article>
+    </section>-->
+    
+        <footer>
+  <div class="footer-container">
+    <div class="col-contacto">
+      <h4>Zay Shop</h4>
+      <p><i class="fa-solid fa-location-dot"></i> 123 Consectetur...</p>
+      <p><i class="fa-solid fa-phone-flip"></i> 010-020-0340</p>
+      <p><i class="fa-solid fa-envelope"></i> info@company.com</p>
+    </div>
+
+    <div class="col-productos">
+      <h4>Productos</h4>
+      <ul>
+        <li>Luxury</li>
+        <li>Sport Wear</li>
+        <li>Men’s Shoes</li>
+        <li>Women’s Shoes</li>
+      </ul>
+    </div>
+
+    <div class="col-info">
+      <h4>Más Info</h4>
+      <ul>
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Shop Locations</li>
+        <li>FAQs</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+    </footer>
+</body>
+
+</html>
